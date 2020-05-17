@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SourceFileCollection xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Profile>Reach</Profile>
+  <Platform>Windows</Platform>
+  <Config />
+  <SourceFiles>
+    <File>C:/Users/Tiago/Desktop/GIT/tpi_preparation/tpi_prep/tpi_prep/Content/basicFont.spritefont</File>
+    <File>C:/Users/Tiago/Desktop/GIT/tpi_preparation/tpi_prep/tpi_prep/Content/Controls/Button.png</File>
+    <File>C:/Users/Tiago/Desktop/GIT/tpi_preparation/tpi_prep/tpi_prep/Content/Graphics/background.png</File>
+    <File>C:/Users/Tiago/Desktop/GIT/tpi_preparation/tpi_prep/tpi_prep/Content/Graphics/bar.png</File>
+    <File>C:/Users/Tiago/Desktop/GIT/tpi_preparation/tpi_prep/tpi_prep/Content/Graphics/barrel2.png</File>
+  </SourceFiles>
+  <DestFiles>
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+    <File xsi:nil="true" />
+  </DestFiles>
+</SourceFileCollection>

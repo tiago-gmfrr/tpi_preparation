@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <SourceFile>C:/Users/Tiago/Desktop/GIT/tpi_preparation/tpi_prep/tpi_prep/Content/basicFont.spritefont</SourceFile>
+  <SourceTime>2018-12-08T17:35:46+01:00</SourceTime>
+  <DestFile>C:/Users/Tiago/Desktop/GIT/tpi_preparation/tpi_prep/tpi_prep/Content/bin/Windows/Content/basicFont.xnb</DestFile>
+  <DestTime>2020-05-17T18:27:28.1869555+02:00</DestTime>
+  <Importer>FontDescriptionImporter</Importer>
+  <ImporterTime>2018-12-08T17:35:54+01:00</ImporterTime>
+  <Processor>FontDescriptionProcessor</Processor>
+  <ProcessorTime>2018-12-08T17:35:54+01:00</ProcessorTime>
+  <Parameters>
+    <Key>PremultiplyAlpha</Key>
+    <Value>True</Value>
+  </Parameters>
+  <Parameters>
+    <Key>TextureFormat</Key>
+    <Value>Compressed</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>

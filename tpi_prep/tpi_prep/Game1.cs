@@ -1,17 +1,12 @@
-﻿/*
- * Author : Tiago Gama
- * Version: V1.0
- * Date : 17.05.2020
- * Class : Game1 
- * Original source : https://github.com/Oyyou/MonoGame_Tutorials
- * 
- * 
- * TODO : 
- *          - Figure out / ask how to rotate the barrel's hitbox
- *          - After that add the code for the barrel to slide down the obstacle bar 
- *          - Finish commenting the code and double check old (copy and pasted) headers
- */
-
+﻿///  Author : Tiago Gama
+///  Version: V1.0
+///  Date : 17.05.2020
+///  Class : Game1
+///  
+/// TODO :
+/// - Figure out / ask how to rotate the barrel's hitbox
+/// - After that add the code for the barrel to slide down the obstacle bar
+/// Finish commenting the code and double check old(copy and pasted) headers
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
@@ -20,7 +15,7 @@ using tpi_prep.States;
 namespace tpi_prep
 {
     /// <summary>
-    /// This is the main type for your game.
+    /// Main class of the project all states are created, updated and drawn from here
     /// </summary>
     public class Game1 : Game
     {

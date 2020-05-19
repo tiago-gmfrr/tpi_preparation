@@ -1,16 +1,15 @@
-﻿/*
- * Version: V1.0
- * Date : 08.10.2019
- * Classe : State 
- * Source : https://github.com/Oyyou/MonoGame_Tutorials
- * 
- */
+﻿
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 
 namespace tpi_prep.States
 {
+
+    /// <summary>
+    /// Allows the creation of multiple states
+    /// Source : https://github.com/Oyyou/MonoGame_Tutorials
+    /// </summary>
     public abstract class State
     {
         #region Variables

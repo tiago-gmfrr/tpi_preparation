@@ -1,16 +1,13 @@
-﻿/*
- * Author : Tiago Gama
- * Version: V1.0
- * Date : 08.10.2019
- * Classe : State 
- * Descritpion : Generic Sprite
- * 
- */
+﻿
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
 namespace tpi_prep.GameComponents
 {
+    /// <summary>
+    /// A class to help us create other objects, has the basic elements other classes will need
+    /// such as texture, position, hitbox and the game itself to be able to load its texture
+    /// </summary>
     class GenericSprite
     {
         #region Variables
@@ -21,35 +18,43 @@ namespace tpi_prep.GameComponents
         public Texture2D _texture;
         public Rectangle hitbox;
 
-        
+
         #endregion
 
         #region Constructor + Initialize + LoadContent
+        /// <summary>
+        /// Constructor, requires the game to be able to load content
+        /// Usually not used by anyone but its children, leaving it public for now just in case
+        /// </summary>
         public GenericSprite(Game game)
         {
             _game = game;
         }
 
+        /// <summary>
+        /// Initializes the object in a certain position
+        /// </summary>
+        /// <param name="position">Position in the screen</param>
         public virtual void Initialize(Vector2 position)
         {
             _position = position;
         }
 
+        /// <summary>
+        /// Loads the file texture into a variable
+        /// </summary>
+        /// <param name="texture">Name of the file</param>
         public void LoadContent(string texture)
         {
             _texture = _game.Content.Load<Texture2D>(texture);
         }
 
-        public void UnloadContent()
-        {
-
-        }
         #endregion
 
         #region Update + Draw
 
         /// <summary>
-        /// Updates the position and rectangle of the sprite
+        /// Updates the position and hitbox of the sprite
         /// </summary>
         /// <param name="gameTime"></param>
         public virtual void Update(GameTime gameTime)
@@ -61,7 +66,7 @@ namespace tpi_prep.GameComponents
                     _texture.Height);
         }
         /// <summary>
-        /// draws the srpite with a texture an hitbox and a color
+        /// Draws the sprite with a texture an hitbox and keeps its original color
         /// </summary>
         /// <param name="spriteBatch"></param>
         public virtual void Draw(SpriteBatch spriteBatch)

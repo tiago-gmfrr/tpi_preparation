@@ -1,10 +1,4 @@
-﻿/*
- * Version: V1.0
- * Date : 08.10.2019
- * Classe : Component 
- * Original source : https://github.com/Oyyou/MonoGame_Tutorials
- * 
- */
+﻿
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using System;
@@ -15,6 +9,10 @@ using System.Threading.Tasks;
 
 namespace tpi_prep
 {
+    /// <summary>
+    /// An abstract class to facilitate the creation of other components such as buttons
+    /// Original source : https://github.com/Oyyou/MonoGame_Tutorials
+    /// </summary>
     public abstract class Component
     {
         #region Draw + Update

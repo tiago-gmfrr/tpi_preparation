@@ -1,12 +1,4 @@
-﻿/*
- * Author : Tiago Gama
- * Version: V1.0
- * Date : 08.10.2019
- * Classe : Button 
- * Source : https://github.com/Oyyou/MonoGame_Tutorials
- * 
- */
-using Microsoft.Xna.Framework;
+﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System;
@@ -17,6 +9,10 @@ using System.Threading.Tasks;
 
 namespace tpi_prep.Controls
 {
+    /// <summary>
+    /// Just a simple button
+    /// Original source : https://github.com/Oyyou/MonoGame_Tutorials
+    /// </summary>
     public class Button : Component
     {
         #region Fields

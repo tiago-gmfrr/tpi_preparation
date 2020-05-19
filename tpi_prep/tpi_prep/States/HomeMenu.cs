@@ -1,12 +1,4 @@
-﻿/*
- * Author : Tiago Gama
- * Version: V1.0
- * Date : 17.05.2020
- * Class : HomeMenu 
- * Original source : https://github.com/Oyyou/MonoGame_Tutorials
- * Desc: Just a menu with Play and Exit buttons
- * 
- */
+﻿
 using System;
 using System.Collections.Generic;
 using Microsoft.Xna.Framework;
@@ -17,6 +9,10 @@ using tpi_prep.Controls;
 
 namespace tpi_prep.States 
 {
+    /// <summary>
+    ///  Just a menu with Play and Exit buttons
+    ///  Original source : https://github.com/Oyyou/MonoGame_Tutorials
+    /// </summary>
     class HomeMenu : State
     {
 

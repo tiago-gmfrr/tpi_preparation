@@ -1,12 +1,4 @@
-﻿/*
- * Author : Tiago Gama
- * Version: V1.0
- * Date : 17.05.2020
- * Class : MonoKong 
- * Desc : The actual game, with the knowledge now I have I assume its a donkey kong game
- * 
- */
-
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,6 +12,9 @@ using tpi_prep.GameComponents;
 
 namespace tpi_prep.States
 {
+    /// <summary>
+    /// The actual game, with the knowledge now I have I assume its a donkey kong game
+    /// </summary>
     class MonoKong : State
     {
         Game1 game1;
@@ -31,6 +26,11 @@ namespace tpi_prep.States
 
         float HEIGHT_LIMIT;
 
+        /// <summary>
+        /// Creates the game state
+        /// </summary>
+        /// <param name="graphicsDevice">Users screen</param>
+        /// <param name="content">Where the texture files are located</param>
         public MonoKong(Game1 game, GraphicsDevice graphicsDevice, ContentManager content)
          : base(game, graphicsDevice, content)
         {
@@ -53,7 +53,9 @@ namespace tpi_prep.States
             barrel = new Barrel(game1, HEIGHT_LIMIT);
         }
 
-
+        /// <summary>
+        /// Loads the textures into the variables
+        /// </summary>
         public void LoadContent()
         {
             obstacle.LoadContent("Graphics/bar");
@@ -61,12 +63,15 @@ namespace tpi_prep.States
 
             background = _content.Load<Texture2D>("Graphics/background");
         }
-
+        /// <summary>
+        /// General flow of the game
+        /// </summary>
         public override void Update(GameTime gameTime)
         {
             obstacle.Update(gameTime);
             barrel.Update(gameTime);
 
+            //temporary just for testing
             if (barrel.hitbox.Intersects(obstacle.hitbox))
             {
                 barrel.Change_Velocity(new Vector2(0, 0));
@@ -79,7 +84,9 @@ namespace tpi_prep.States
         {
 
         }
-
+        /// <summary>
+        /// Draws the game state
+        /// </summary>
         public override void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
             //Draws the background

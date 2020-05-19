@@ -26,3 +26,4 @@ C:\Users\Tiago\Desktop\GIT\tpi_preparation\tpi_prep\tpi_prep\bin\Windows\x86\Deb
 C:\Users\Tiago\Desktop\GIT\tpi_preparation\tpi_prep\tpi_prep\bin\Windows\x86\Debug\Content\Controls\Button.xnb
 C:\Users\Tiago\Desktop\GIT\tpi_preparation\tpi_prep\tpi_prep\bin\Windows\x86\Debug\Content\basicFont.xnb
 C:\Users\Tiago\Desktop\GIT\tpi_preparation\tpi_prep\tpi_prep\bin\Windows\x86\Debug\Content\Graphics\barrel2.xnb
+C:\Users\Tiago\Desktop\GIT\tpi_preparation\tpi_prep\tpi_prep\bin\Windows\x86\Debug\Content\Graphics\debugPixel.xnb

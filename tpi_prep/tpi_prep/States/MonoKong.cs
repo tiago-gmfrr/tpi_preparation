@@ -23,7 +23,8 @@ namespace tpi_prep.States
         ObstacleBar obstacle;
         //Graphic vars
         Texture2D background;
-
+        bool test = false;
+        float a;
         float HEIGHT_LIMIT;
 
         /// <summary>
@@ -47,7 +48,7 @@ namespace tpi_prep.States
         /// </summary>
         public void Initialize()
         {
-            obstacle = new ObstacleBar(game1, 0.2f);
+            obstacle = new ObstacleBar(game1, 10f);
             obstacle.Initialize(new Vector2(500, 500));
 
             barrel = new Barrel(game1, HEIGHT_LIMIT);
@@ -70,14 +71,46 @@ namespace tpi_prep.States
         {
             obstacle.Update(gameTime);
             barrel.Update(gameTime);
-
+            
             //temporary just for testing
-            if (barrel.hitbox.Intersects(obstacle.hitbox))
+            if (test == false)
             {
-                barrel.Change_Velocity(new Vector2(0, 0));
+                if (barrel.hitbox.Intersects(obstacle.hitbox))
+                {
+                    a = GetA();
+                    test = true;
+                }
+                else
+                {
+                    test = false;
+                    barrel.Change_Velocity(new Vector2(0, 3));
+                }
+
+            }
+            else
+            {
+                if (barrel._position.Y >= obstacle._position.Y + a - obstacle._texture.Height)
+                {
+                    barrel.Change_Velocity(new Vector2(3, 0));
+                    GetA();
+                    test = false;
+                }
+                else
+                {
+                    barrel.Change_Velocity(new Vector2(0, 3));
+                }
+
             }
 
+        }
 
+        private float GetA()
+        {
+            float r = barrel._position.X - obstacle._position.X;
+
+            float rotationInDegrees = 10f;
+
+            return (float)Math.Sin(MathHelper.ToRadians(rotationInDegrees)) * r;
         }
 
         public override void PostUpdate(GameTime gameTime)

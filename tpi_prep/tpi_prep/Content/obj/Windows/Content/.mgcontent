@@ -9,8 +9,10 @@
     <File>C:/Users/Tiago/Desktop/GIT/tpi_preparation/tpi_prep/tpi_prep/Content/Graphics/background.png</File>
     <File>C:/Users/Tiago/Desktop/GIT/tpi_preparation/tpi_prep/tpi_prep/Content/Graphics/bar.png</File>
     <File>C:/Users/Tiago/Desktop/GIT/tpi_preparation/tpi_prep/tpi_prep/Content/Graphics/barrel2.png</File>
+    <File>C:/Users/Tiago/Desktop/GIT/tpi_preparation/tpi_prep/tpi_prep/Content/Graphics/debugPixel.png</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />

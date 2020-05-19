@@ -59,6 +59,8 @@ namespace tpi_prep.GameComponents
         /// <param name="gameTime"></param>
         public virtual void Update(GameTime gameTime)
         {
+
+            
             hitbox = new Rectangle(
                     (int)_position.X,
                     (int)_position.Y,

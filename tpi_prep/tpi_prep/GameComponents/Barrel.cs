@@ -15,7 +15,7 @@ namespace tpi_prep.GameComponents
     /// </summary>
     class Barrel : GenericSprite
     {
-        Vector2 startpos = new Vector2(900, 50);
+        Vector2 startpos = new Vector2(700, 50);
         float heightLimit;
         Vector2 velocity = new Vector2 (0, 3);
        
@@ -36,7 +36,7 @@ namespace tpi_prep.GameComponents
         public override void Update(GameTime gameTime)
         {
 
-            _position.Y += velocity.Y;
+            _position += velocity;
 
             if (_position.Y >= heightLimit && heightLimit != 0)
             {

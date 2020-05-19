@@ -1,0 +1,71 @@
+\documentclass[a4paper,12pt]{report}
+
+\usepackage[francais]{babel} % Typographie
+\usepackage[T1]{fontenc}     % Saisie en
+\usepackage[latin1]{inputenc} % français
+\usepackage{lmodern}
+
+%% Réglages généraux
+\usepackage[left=2.5cm, right=2cm, top=1.5cm, bottom=1.5cm]{geometry} % taille de la feuille
+\usepackage{fancyhdr} % Titre courant
+\usepackage{lastpage} % pour avoir \pageref{LastPage} : le nombre total de pages du doc
+\usepackage{hyperref}
+\usepackage{blindtext}
+\usepackage{graphicx}
+
+%infos sur le document : auteur, titre, version (utilisées en page de garde, pied de page, filigrane...)
+\newcommand{\docauthor}{Gama Ferreira Carvalho Tiago}
+\newcommand{\doctitle}{\jobname{}.tex}
+%----------------------------------------------------------
+
+% Entête et pied de page.
+\pagestyle{fancy}
+\fancyfoot[CO,CE]{\footnotesize\thepage~/~\pageref{LastPage}}
+\fancyfoot[RO,RE]{\scriptsize\emph{\docauthor{}}}
+\fancyfoot[LO,LE]{\scriptsize\emph{\doctitle{}}}
+\fancyhead[LO,CO,RO]{}
+
+\include{./inc_lst_csharp}
+
+% le document commence réellement ici
+\begin{document}
+
+	\title{TPI 2020 - Mono Kong }
+	\author{Gama Ferreira Carvalho Tiago \\ I.FA-P3A \\ École d'informatique (CFPT-I)}
+	\date{19 Mai 2020}
+	\maketitle
+
+\tableofcontents
+\newcommand{\mylstinputlisting}[1]{\lstinputlisting[caption={\texttt{#1}}]{#1}}
+			
+
+\chapter{Monokong}
+	\section{Jeu} 	
+		\subsection{Game1.cs}
+			\mylstinputlisting{./tpi_prep/tpi_prep/Game1.cs}
+\newpage
+	\section{Etats}
+	\subsection{State.cs}
+			\mylstinputlisting{./tpi_prep/tpi_prep/States/State.cs}
+		\subsection{HomeMenu.cs}
+			\mylstinputlisting{./tpi_prep/tpi_prep/States/HomeMenu.cs}
+		\subsection{MonoKong.cs}
+			\mylstinputlisting{./tpi_prep/tpi_prep/States/MonoKong.cs}
+\newpage
+	\section{Modèles}
+		\subsection{GenericSprite.cs}
+			\mylstinputlisting{./tpi_prep/tpi_prep/GameComponents/GenericSprite.cs}
+\newpage
+		\subsection{Barrel.cs}
+			\mylstinputlisting{./tpi_prep/tpi_prep/GameComponents/Barrel.cs}
+\newpage
+		\subsection{ObstacleBar.cs}
+			\mylstinputlisting{./tpi_prep/tpi_prep/GameComponents/ObstacleBar.cs}
+\newpage
+		\subsection{Component.cs}
+			\mylstinputlisting{./tpi_prep/tpi_prep/Component.cs}
+\newpage
+		\subsection{Button.cs}
+			\mylstinputlisting{./tpi_prep/tpi_prep/Controls/Button.cs}
+
+\end{document}
